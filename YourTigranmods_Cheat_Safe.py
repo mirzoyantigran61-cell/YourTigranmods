@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 import time
 import socket
 import platform
@@ -17,13 +18,15 @@ console = Console()
 # CONFIG
 # =========================================
 
-VERSION = "v3.0"
+VERSION = "v4.0"
 
 MOD_NAME = "YourTigranmods Official Comeback"
 
 DOWNLOAD_URL = "https://pixeldrain.com/api/file/FcrcgCQP"
 
 SAVE_PATH = "/storage/emulated/0/Download/YourTigranmodsOfficialComeback.apks"
+
+USERS_FILE = "users.json"
 
 YOUTUBE = "https://youtube.com/@speedmak01?si=CGir5ln_pMMb9baJ"
 
@@ -60,6 +63,148 @@ def internet():
 
 
 # =========================================
+# USERS
+# =========================================
+
+def load_users():
+
+    if not os.path.exists(USERS_FILE):
+        with open(USERS_FILE, "w") as f:
+            json.dump({}, f)
+
+    with open(USERS_FILE, "r") as f:
+        return json.load(f)
+
+
+def save_users(users):
+
+    with open(USERS_FILE, "w") as f:
+        json.dump(users, f)
+
+
+# =========================================
+# REGISTER
+# =========================================
+
+def register():
+
+    clear()
+
+    console.print(
+        Panel.fit(
+            "[bold red]REGISTER[/bold red]",
+            border_style="red"
+        )
+    )
+
+    users = load_users()
+
+    username = input("\nUsername: ")
+    password = input("Password: ")
+
+    if username in users:
+
+        console.print(
+            "\n[bold red]User already exists[/bold red]"
+        )
+
+        wait()
+        return
+
+    users[username] = password
+
+    save_users(users)
+
+    console.print(
+        "\n[bold green]Registration Successful[/bold green]"
+    )
+
+    wait()
+
+
+# =========================================
+# LOGIN
+# =========================================
+
+def login():
+
+    clear()
+
+    console.print(
+        Panel.fit(
+            "[bold red]LOGIN[/bold red]",
+            border_style="red"
+        )
+    )
+
+    users = load_users()
+
+    username = input("\nUsername: ")
+    password = input("Password: ")
+
+    if username in users and users[username] == password:
+
+        console.print(
+            "\n[bold green]Login Successful[/bold green]"
+        )
+
+        time.sleep(1)
+        return True
+
+    else:
+
+        console.print(
+            "\n[bold red]Invalid Username or Password[/bold red]"
+        )
+
+        wait()
+        return False
+
+
+# =========================================
+# AUTH MENU
+# =========================================
+
+def auth():
+
+    while True:
+
+        clear()
+
+        table = Table(title="AUTH SYSTEM")
+
+        table.add_column(
+            "Option",
+            style="red",
+            justify="center"
+        )
+
+        table.add_column(
+            "Action",
+            style="white"
+        )
+
+        table.add_row("1", "Login")
+        table.add_row("2", "Register")
+        table.add_row("3", "Exit")
+
+        console.print(table)
+
+        choice = input("\nSelect: ")
+
+        if choice == "1":
+
+            if login():
+                break
+
+        elif choice == "2":
+            register()
+
+        elif choice == "3":
+            sys.exit()
+
+
+# =========================================
 # ASCII
 # =========================================
 
@@ -81,7 +226,7 @@ ASCII = r'''
 
 ╔══════════════════════════════════╗
 ║      YourTigran Cheat Safe      ║
-║       Universal Engine v3       ║
+║       Universal Engine v4       ║
 ╚══════════════════════════════════╝
 
 '''
@@ -91,15 +236,20 @@ ASCII = r'''
 # =========================================
 
 def loading():
+
     clear()
 
-    console.print(f"[bold red]{ASCII}[/bold red]")
+    console.print(
+        f"[bold red]{ASCII}[/bold red]"
+    )
 
-    console.print(Panel.fit(
-        f"[bold white]{MOD_NAME}[/bold white]\n"
-        f"[red]Universal Engine {VERSION}[/red]",
-        border_style="red"
-    ))
+    console.print(
+        Panel.fit(
+            f"[bold white]{MOD_NAME}[/bold white]\n"
+            f"[red]Universal Engine {VERSION}[/red]",
+            border_style="red"
+        )
+    )
 
     typing("Initializing modules...", 0.02)
     typing("Checking security...", 0.02)
@@ -107,16 +257,32 @@ def loading():
     typing("Connecting secure session...", 0.02)
 
     with Progress() as progress:
-        task = progress.add_task("[red]Loading...", total=100)
+
+        task = progress.add_task(
+            "[red]Loading...",
+            total=100
+        )
 
         for i in range(100):
+
             time.sleep(0.02)
-            progress.update(task, advance=1)
+
+            progress.update(
+                task,
+                advance=1
+            )
 
     if internet():
-        console.print("\n[bold green]Internet Connected[/bold green]")
+
+        console.print(
+            "\n[bold green]Internet Connected[/bold green]"
+        )
+
     else:
-        console.print("\n[bold red]No Internet[/bold red]")
+
+        console.print(
+            "\n[bold red]No Internet[/bold red]"
+        )
 
     time.sleep(1)
 
@@ -126,9 +292,11 @@ def loading():
 # =========================================
 
 def subscribe_page():
+
     clear()
 
-    console.print(Panel.fit(
+    console.print(
+        Panel.fit(
 f"""
 [bold red]REQUIRED SUBSCRIPTIONS[/bold red]
 
@@ -150,13 +318,19 @@ border_style="red"
     choice = input("\nSelect: ")
 
     if choice == "1":
+
         webbrowser.open(YOUTUBE)
+
         wait()
+
         subscribe_page()
 
     elif choice == "2":
+
         webbrowser.open(TG1)
+
         wait()
+
         subscribe_page()
 
 
@@ -165,6 +339,7 @@ border_style="red"
 # =========================================
 
 def friends_page():
+
     clear()
 
     text = """
@@ -182,7 +357,12 @@ Usernames:
 @Config_king
 """
 
-    console.print(Panel.fit(text, border_style="red"))
+    console.print(
+        Panel.fit(
+            text,
+            border_style="red"
+        )
+    )
 
     wait()
 
@@ -192,19 +372,34 @@ Usernames:
 # =========================================
 
 def download_file():
+
     clear()
 
-    console.print(Panel.fit(
-        "[green]Downloading APK...[/green]",
-        border_style="red"
-    ))
+    console.print(
+        Panel.fit(
+            "[green]Downloading APK...[/green]",
+            border_style="red"
+        )
+    )
 
     try:
-        response = requests.get(DOWNLOAD_URL, stream=True)
 
-        total = int(response.headers.get('content-length', 0))
+        response = requests.get(
+            DOWNLOAD_URL,
+            stream=True
+        )
 
-        with open(SAVE_PATH, 'wb') as file:
+        total = int(
+            response.headers.get(
+                'content-length',
+                0
+            )
+        )
+
+        with open(
+            SAVE_PATH,
+            'wb'
+        ) as file:
 
             with Progress() as progress:
 
@@ -213,11 +408,18 @@ def download_file():
                     total=total
                 )
 
-                for chunk in response.iter_content(chunk_size=1024):
+                for chunk in response.iter_content(
+                    chunk_size=1024
+                ):
 
                     if chunk:
+
                         file.write(chunk)
-                        progress.update(task, advance=len(chunk))
+
+                        progress.update(
+                            task,
+                            advance=len(chunk)
+                        )
 
         console.print(
             f"\n[bold green]Saved:[/bold green] {SAVE_PATH}"
@@ -237,6 +439,7 @@ def download_file():
 # =========================================
 
 def mod_info():
+
     clear()
 
     info = f"""
@@ -253,7 +456,12 @@ def mod_info():
 • Online Engine
 """
 
-    console.print(Panel.fit(info, border_style="red"))
+    console.print(
+        Panel.fit(
+            info,
+            border_style="red"
+        )
+    )
 
     wait()
 
@@ -263,6 +471,7 @@ def mod_info():
 # =========================================
 
 def community():
+
     clear()
 
     info = f"""
@@ -275,7 +484,12 @@ TELEGRAM:
 {TG3}
 """
 
-    console.print(Panel.fit(info, border_style="red"))
+    console.print(
+        Panel.fit(
+            info,
+            border_style="red"
+        )
+    )
 
     wait()
 
@@ -285,6 +499,7 @@ TELEGRAM:
 # =========================================
 
 def system_info():
+
     clear()
 
     info = f"""
@@ -298,7 +513,12 @@ Device:
 {platform.machine()}
 """
 
-    console.print(Panel.fit(info, border_style="red"))
+    console.print(
+        Panel.fit(
+            info,
+            border_style="red"
+        )
+    )
 
     wait()
 
@@ -308,6 +528,7 @@ Device:
 # =========================================
 
 def engine():
+
     clear()
 
     typing("Checking device...", 0.02)
@@ -329,6 +550,7 @@ def engine():
 # =========================================
 
 def open_folder():
+
     os.system(
         f'am start -a android.intent.action.VIEW -d file://{SAVE_PATH}'
     )
@@ -390,12 +612,19 @@ def menu():
             open_folder()
 
         elif choice == "7":
+
             clear()
+
             typing("Goodbye...", 0.03)
+
             sys.exit()
 
         else:
-            console.print("[red]Invalid Option[/red]")
+
+            console.print(
+                "[red]Invalid Option[/red]"
+            )
+
             time.sleep(1)
 
 
@@ -404,6 +633,7 @@ def menu():
 # =========================================
 
 loading()
+auth()
 subscribe_page()
 friends_page()
 menu()
