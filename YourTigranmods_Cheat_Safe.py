@@ -1,7 +1,11 @@
 import os
 import sys
 import time
+import socket
+import platform
+import webbrowser
 import requests
+
 from rich.console import Console
 from rich.panel import Panel
 from rich.progress import Progress
@@ -9,18 +13,64 @@ from rich.table import Table
 
 console = Console()
 
+# =========================================
+# CONFIG
+# =========================================
+
+VERSION = "v3.0"
+
 MOD_NAME = "YourTigranmods Official Comeback"
+
 DOWNLOAD_URL = "https://pixeldrain.com/api/file/FcrcgCQP"
+
 SAVE_PATH = "/storage/emulated/0/Download/YourTigranmodsOfficialComeback.apks"
 
+YOUTUBE = "https://youtube.com/@speedmak01?si=CGir5ln_pMMb9baJ"
+
+TG1 = "https://t.me/speedmak"
+TG2 = "https://t.me/speedmak1"
+TG3 = "https://t.me/+cdjdEm2gr0gwODA1"
+
+# =========================================
+# UTILS
+# =========================================
 
 def clear():
     os.system("clear")
 
 
-def loading():
-    clear()
-    ascii_logo = r'''╝
+def wait():
+    input("\n[ PRESS ENTER ]")
+
+
+def typing(text, speed=0.01):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(speed)
+    print()
+
+
+def internet():
+    try:
+        socket.create_connection(("8.8.8.8", 53), timeout=3)
+        return True
+    except:
+        return False
+
+
+# =========================================
+# ASCII
+# =========================================
+
+ASCII = r'''
+
+██╗   ██╗ ██████╗ ██╗   ██╗██████╗ 
+╚██╗ ██╔╝██╔═══██╗██║   ██║██╔══██╗
+ ╚████╔╝ ██║   ██║██║   ██║██████╔╝
+  ╚██╔╝  ██║   ██║██║   ██║██╔══██╗
+   ██║   ╚██████╔╝╚██████╔╝██║  ██║
+   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝  ╚═╝
 
 ████████╗██╗ ██████╗ ██████╗  █████╗ ███╗   ██╗
 ╚══██╔══╝██║██╔════╝ ██╔══██╗██╔══██╗████╗  ██║
@@ -29,73 +79,168 @@ def loading():
    ██║   ██║╚██████╔╝██║  ██║██║  ██║██║ ╚████║
    ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
 
-            ╔══════════════════════════════════╗
+╔══════════════════════════════════╗
 ║      YourTigran Cheat Safe      ║
-║       Universal Engine v1       ║
-╚══════════════════════════════════╝	       
+║       Universal Engine v3       ║
+╚══════════════════════════════════╝
 
 '''
 
-    console.print(f"[bold red]{ascii_logo}[/bold red]")
+# =========================================
+# LOADING
+# =========================================
+
+def loading():
+    clear()
+
+    console.print(f"[bold red]{ASCII}[/bold red]")
+
     console.print(Panel.fit(
-        "[bold white]YourTigranmods Cheat Safe[/bold white]\n"
-        "[green]Universal APK Loader[/green]",
+        f"[bold white]{MOD_NAME}[/bold white]\n"
+        f"[red]Universal Engine {VERSION}[/red]",
         border_style="red"
     ))
 
+    typing("Initializing modules...", 0.02)
+    typing("Checking security...", 0.02)
+    typing("Loading assets...", 0.02)
+    typing("Connecting secure session...", 0.02)
+
     with Progress() as progress:
-        task = progress.add_task("[cyan]Loading...", total=100)
+        task = progress.add_task("[red]Loading...", total=100)
+
         for i in range(100):
             time.sleep(0.02)
             progress.update(task, advance=1)
 
+    if internet():
+        console.print("\n[bold green]Internet Connected[/bold green]")
+    else:
+        console.print("\n[bold red]No Internet[/bold red]")
 
-def show_menu():
+    time.sleep(1)
+
+
+# =========================================
+# SUBSCRIBE PAGE
+# =========================================
+
+def subscribe_page():
     clear()
 
-    table = Table(title="YourTigranmods Cheat Safe")
+    console.print(Panel.fit(
+f"""
+[bold red]REQUIRED SUBSCRIPTIONS[/bold red]
 
-    table.add_column("Option", style="red", justify="center")
-    table.add_column("Action", style="white")
+YouTube:
+{YOUTUBE}
 
-    table.add_row("1", "Download Mod")
-    table.add_row("2", "Mod Information")
-    table.add_row("3", "Open Download Folder")
-    table.add_row("4", "Exit")
+Telegram:
+{TG1}
+{TG2}
+{TG3}
+""",
+border_style="red"
+))
 
-    console.print(table)
+    console.print("\n[1] Open YouTube")
+    console.print("[2] Open Telegram")
+    console.print("[3] Continue")
 
+    choice = input("\nSelect: ")
+
+    if choice == "1":
+        webbrowser.open(YOUTUBE)
+        wait()
+        subscribe_page()
+
+    elif choice == "2":
+        webbrowser.open(TG1)
+        wait()
+        subscribe_page()
+
+
+# =========================================
+# FRIENDS PAGE
+# =========================================
+
+def friends_page():
+    clear()
+
+    text = """
+SPECIAL THANKS
+
+Ankit
+Kaier
+BRZ TEAM
+Raj VARDHAN
+
+Usernames:
+@AnkitXlive
+@KaierRlzx
+@BRZGANG
+@Config_king
+"""
+
+    console.print(Panel.fit(text, border_style="red"))
+
+    wait()
+
+
+# =========================================
+# DOWNLOAD
+# =========================================
 
 def download_file():
     clear()
-    console.print(Panel.fit("[green]Downloading APK...[/green]"))
+
+    console.print(Panel.fit(
+        "[green]Downloading APK...[/green]",
+        border_style="red"
+    ))
 
     try:
         response = requests.get(DOWNLOAD_URL, stream=True)
+
         total = int(response.headers.get('content-length', 0))
 
         with open(SAVE_PATH, 'wb') as file:
+
             with Progress() as progress:
-                task = progress.add_task("[red]Downloading", total=total)
+
+                task = progress.add_task(
+                    "[red]Downloading",
+                    total=total
+                )
 
                 for chunk in response.iter_content(chunk_size=1024):
+
                     if chunk:
                         file.write(chunk)
                         progress.update(task, advance=len(chunk))
 
-        console.print(f"\n[bold green]Saved to:[/bold green] {SAVE_PATH}")
+        console.print(
+            f"\n[bold green]Saved:[/bold green] {SAVE_PATH}"
+        )
 
     except Exception as e:
-        console.print(f"[bold red]Error:[/bold red] {e}")
 
-    input("\nPress ENTER to continue...")
+        console.print(
+            f"[bold red]Error:[/bold red] {e}"
+        )
 
+    wait()
+
+
+# =========================================
+# MOD INFO
+# =========================================
 
 def mod_info():
     clear()
 
-    info = """
-YourTigranmods Official Comeback
+    info = f"""
+{MOD_NAME}
 
 • Universal UI Engine
 • Multi Interface Support
@@ -103,37 +248,162 @@ YourTigranmods Official Comeback
 • Android 5+ Support
 • Overlay Support
 • Shizuku Compatible
-    """
+• Cyberpunk UI
+• Auto Download System
+• Online Engine
+"""
 
     console.print(Panel.fit(info, border_style="red"))
 
-    input("\nPress ENTER to continue...")
+    wait()
 
+
+# =========================================
+# COMMUNITY
+# =========================================
+
+def community():
+    clear()
+
+    info = f"""
+YOUTUBE:
+{YOUTUBE}
+
+TELEGRAM:
+{TG1}
+{TG2}
+{TG3}
+"""
+
+    console.print(Panel.fit(info, border_style="red"))
+
+    wait()
+
+
+# =========================================
+# SYSTEM INFO
+# =========================================
+
+def system_info():
+    clear()
+
+    info = f"""
+Python:
+{sys.version}
+
+Platform:
+{platform.system()}
+
+Device:
+{platform.machine()}
+"""
+
+    console.print(Panel.fit(info, border_style="red"))
+
+    wait()
+
+
+# =========================================
+# ENGINE
+# =========================================
+
+def engine():
+    clear()
+
+    typing("Checking device...", 0.02)
+    typing("Checking protection...", 0.02)
+    typing("Encrypting session...", 0.02)
+    typing("Launching engine...", 0.02)
+
+    time.sleep(2)
+
+    console.print(
+        "\n[bold green]ENGINE STARTED SUCCESSFULLY[/bold green]"
+    )
+
+    wait()
+
+
+# =========================================
+# OPEN FOLDER
+# =========================================
 
 def open_folder():
-    os.system(f'am start -a android.intent.action.VIEW -d file://{SAVE_PATH}')
+    os.system(
+        f'am start -a android.intent.action.VIEW -d file://{SAVE_PATH}'
+    )
 
+
+# =========================================
+# MAIN MENU
+# =========================================
+
+def menu():
+
+    while True:
+
+        clear()
+
+        table = Table(
+            title=f"YourTigranmods Universal Engine {VERSION}"
+        )
+
+        table.add_column(
+            "Option",
+            style="red",
+            justify="center"
+        )
+
+        table.add_column(
+            "Action",
+            style="white"
+        )
+
+        table.add_row("1", "Start Engine")
+        table.add_row("2", "Download Mod")
+        table.add_row("3", "Mod Information")
+        table.add_row("4", "Community")
+        table.add_row("5", "System Info")
+        table.add_row("6", "Open Download Folder")
+        table.add_row("7", "Exit")
+
+        console.print(table)
+
+        choice = input("\nSelect Option: ")
+
+        if choice == "1":
+            engine()
+
+        elif choice == "2":
+            download_file()
+
+        elif choice == "3":
+            mod_info()
+
+        elif choice == "4":
+            community()
+
+        elif choice == "5":
+            system_info()
+
+        elif choice == "6":
+            open_folder()
+
+        elif choice == "7":
+            clear()
+            typing("Goodbye...", 0.03)
+            sys.exit()
+
+        else:
+            console.print("[red]Invalid Option[/red]")
+            time.sleep(1)
+
+
+# =========================================
+# START
+# =========================================
 
 loading()
-
-while True:
-    show_menu()
-    choice = input("\nSelect option: ")
-
-    if choice == "1":
-        download_file()
-
-    elif choice == "2":
-        mod_info()
-
-    elif choice == "3":
-        open_folder()
-
-    elif choice == "4":
-        clear()
-        console.print("[bold red]Goodbye.[/bold red]")
-        sys.exit()
-
-    else:
-        console.print("[red]Invalid option[/red]")
-        time.sleep(1)
+subscribe_page()
+friends_page()
+menu()
