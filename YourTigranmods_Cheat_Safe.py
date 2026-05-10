@@ -15,14 +15,23 @@ from rich.table import Table
 console = Console()
 
 # =========================================
-# CONFIG
+# CONFIG API
 # =========================================
 
-VERSION = "v4.0"
+CONFIG_URL = "https://raw.githubusercontent.com/mirzoyantigran61-cell/YourTigranmods/refs/heads/main/config.json"
+
+config = requests.get(CONFIG_URL).json()
+
+VERSION = config["version"]
+DOWNLOAD_URL = config["download"]
+STATUS = config["status"]
+NEWS = config["news"]
+
+# =========================================
+# LOCAL CONFIG
+# =========================================
 
 MOD_NAME = "YourTigranmods Official Comeback"
-
-DOWNLOAD_URL = "https://pixeldrain.com/api/file/FcrcgCQP"
 
 SAVE_PATH = "/storage/emulated/0/Download/YourTigranmodsOfficialComeback.apks"
 
@@ -47,18 +56,27 @@ def wait():
 
 
 def typing(text, speed=0.01):
+
     for char in text:
+
         sys.stdout.write(char)
         sys.stdout.flush()
+
         time.sleep(speed)
+
     print()
 
 
 def internet():
+
     try:
+
         socket.create_connection(("8.8.8.8", 53), timeout=3)
+
         return True
+
     except:
+
         return False
 
 
@@ -69,16 +87,20 @@ def internet():
 def load_users():
 
     if not os.path.exists(USERS_FILE):
+
         with open(USERS_FILE, "w") as f:
+
             json.dump({}, f)
 
     with open(USERS_FILE, "r") as f:
+
         return json.load(f)
 
 
 def save_users(users):
 
     with open(USERS_FILE, "w") as f:
+
         json.dump(users, f)
 
 
@@ -109,6 +131,7 @@ def register():
         )
 
         wait()
+
         return
 
     users[username] = password
@@ -149,6 +172,7 @@ def login():
         )
 
         time.sleep(1)
+
         return True
 
     else:
@@ -158,6 +182,7 @@ def login():
         )
 
         wait()
+
         return False
 
 
@@ -195,12 +220,15 @@ def auth():
         if choice == "1":
 
             if login():
+
                 break
 
         elif choice == "2":
+
             register()
 
         elif choice == "3":
+
             sys.exit()
 
 
@@ -226,7 +254,7 @@ ASCII = r'''
 
 ╔══════════════════════════════════╗
 ║      YourTigran Cheat Safe      ║
-║       Universal Engine v4       ║
+║       Universal Engine          ║
 ╚══════════════════════════════════╝
 
 '''
@@ -445,14 +473,17 @@ def mod_info():
     info = f"""
 {MOD_NAME}
 
+STATUS:
+{STATUS}
+
+NEWS:
+{NEWS}
+
 • Universal UI Engine
 • Multi Interface Support
 • Fast Loading
 • Android 5+ Support
-• Overlay Support
-• Shizuku Compatible
 • Cyberpunk UI
-• Auto Download System
 • Online Engine
 """
 
@@ -594,21 +625,27 @@ def menu():
         choice = input("\nSelect Option: ")
 
         if choice == "1":
+
             engine()
 
         elif choice == "2":
+
             download_file()
 
         elif choice == "3":
+
             mod_info()
 
         elif choice == "4":
+
             community()
 
         elif choice == "5":
+
             system_info()
 
         elif choice == "6":
+
             open_folder()
 
         elif choice == "7":
@@ -626,7 +663,6 @@ def menu():
             )
 
             time.sleep(1)
-
 
 # =========================================
 # START
