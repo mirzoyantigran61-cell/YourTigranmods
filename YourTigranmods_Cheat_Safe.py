@@ -26,94 +26,94 @@ TYPING_DELAY = 0.01
 
 # ==================== KNOWLEDGE BASE QUESTIONS ====================
 HISTORY_QUESTIONS = [
-    ("В каком году Армения приняла христианство?", 301),
-    ("В каком году была провозглашена независимость Армении?", 1991),
-    ("В каком году был основан Ереван?", 782),
-    ("В каком году пала Западная Римская империя?", 476),
-    ("В каком году началась Вторая мировая война?", 1939),
-    ("В каком году человек высадился на Луну?", 1969),
-    ("В каком году был построен Колизей?", 80),
-    ("В каком году распался СССР?", 1991),
-    ("В каком году началась Первая мировая война?", 1914),
-    ("В каком году закончилась Холодная война?", 1991),
+    ("In what year did Armenia adopt Christianity?", 301),
+    ("In what year was Armenia's independence declared?", 1991),
+    ("In what year was Yerevan founded?", 782),
+    ("In what year did the Western Roman Empire fall?", 476),
+    ("In what year did World War II begin?", 1939),
+    ("In what year did humans land on the Moon?", 1969),
+    ("In what year was the Colosseum built?", 80),
+    ("In what year did the USSR collapse?", 1991),
+    ("In what year did World War I begin?", 1914),
+    ("In what year did the Cold War end?", 1991),
 ]
 
 PROGRAMMING_QUESTIONS = [
-    ("В каком году появился язык программирования C?", 1972),
-    ("В каком году появился язык программирования Python?", 1991),
-    ("В каком году появился язык программирования Java?", 1995),
-    ("В каком году появился язык программирования C++?", 1985),
-    ("В каком году появился язык JavaScript?", 1995),
-    ("В каком году появился язык Go?", 2009),
-    ("В каком году появился язык Rust?", 2010),
-    ("В каком году появился язык Swift?", 2014),
-    ("В каком году появился язык Kotlin?", 2011),
-    ("В каком году появился язык TypeScript?", 2012),
+    ("In what year was the C programming language created?", 1972),
+    ("In what year was Python created?", 1991),
+    ("In what year was Java created?", 1995),
+    ("In what year was C++ created?", 1985),
+    ("In what year was JavaScript created?", 1995),
+    ("In what year was Go created?", 2009),
+    ("In what year was Rust created?", 2010),
+    ("In what year was Swift created?", 2014),
+    ("In what year was Kotlin created?", 2011),
+    ("In what year was TypeScript created?", 2012),
 ]
 
 TECH_QUESTIONS = [
-    ("В каком году был создан первый iPhone?", 2007),
-    ("В каком году был создан первый Android телефон?", 2008),
-    ("В каком году появился Linux?", 1991),
-    ("В каком году появился интернет (ARPANET)?", 1969),
-    ("В каком году был создан первый компьютер ENIAC?", 1946),
-    ("В каком году появился Windows 95?", 1995),
-    ("В каком году появился первый веб-браузер?", 1990),
-    ("В каком году был создан первый транзистор?", 1947),
-    ("В каком году появился WiFi стандарт 802.11?", 1997),
-    ("В каком году появился Bluetooth?", 1994),
+    ("In what year was the first iPhone released?", 2007),
+    ("In what year was the first Android phone released?", 2008),
+    ("In what year was Linux created?", 1991),
+    ("In what year was the internet (ARPANET) created?", 1969),
+    ("In what year was the first computer ENIAC built?", 1946),
+    ("In what year was Windows 95 released?", 1995),
+    ("In what year was the first web browser created?", 1990),
+    ("In what year was the first transistor invented?", 1947),
+    ("In what year was WiFi 802.11 standard introduced?", 1997),
+    ("In what year was Bluetooth introduced?", 1994),
 ]
 
 SCIENCE_QUESTIONS = [
-    ("В каком году была открыта теория относительности Эйнштейна?", 1905),
-    ("В каком году была расшифрована структура ДНК?", 1953),
-    ("В каком году был запущен первый спутник Земли?", 1957),
-    ("В каком году был совершен первый полёт человека в космос?", 1961),
-    ("В каком году было открыто деление ядра урана?", 1938),
-    ("В каком году был открыт пенициллин?", 1928),
-    ("В каком году был изобретён телескоп Галилея?", 1609),
-    ("В каком году был изобретён микроскоп?", 1590),
-    ("В каком году была открыта вакцинация?", 1796),
-    ("В каком году был создан первый искусственный интеллект?", 1956),
+    ("In what year was Einstein's theory of relativity published?", 1905),
+    ("In what year was the structure of DNA discovered?", 1953),
+    ("In what year was the first Earth satellite launched?", 1957),
+    ("In what year was the first human space flight?", 1961),
+    ("In what year was uranium nuclear fission discovered?", 1938),
+    ("In what year was penicillin discovered?", 1928),
+    ("In what year was Galileo's telescope invented?", 1609),
+    ("In what year was the microscope invented?", 1590),
+    ("In what year was vaccination discovered?", 1796),
+    ("In what year was the first artificial intelligence created?", 1956),
 ]
 
 MATH_QUESTIONS = [
-    ("В каком году была доказана теорема Ферма?", 1995),
-    ("В каком году был создан математический анализ?", 1687),
-    ("В каком году была опубликована работа 'Начала' Евклида?", 300),
-    ("В каком году была изобретена арабская цифровая система?", 825),
-    ("В каком году был открыт ноль как число?", 628),
-    ("В каком году появилась теория множеств Кантора?", 1874),
-    ("В каком году была доказана неразрешимость проблемы остановки?", 1936),
-    ("В каком году была создана теория игр?", 1944),
-    ("В каком году появилась теория хаоса?", 1961),
-    ("В каком году была создана криптография с открытым ключом?", 1976),
+    ("In what year was Fermat's Last Theorem proven?", 1995),
+    ("In what year was mathematical analysis created?", 1687),
+    ("In what year was Euclid's 'Elements' published?", 300),
+    ("In what year was the Arabic numeral system invented?", 825),
+    ("In what year was zero discovered as a number?", 628),
+    ("In what year was Cantor's set theory introduced?", 1874),
+    ("In what year was the halting problem proven undecidable?", 1936),
+    ("In what year was game theory created?", 1944),
+    ("In what year was chaos theory introduced?", 1961),
+    ("In what year was public key cryptography invented?", 1976),
 ]
 
 SPACE_QUESTIONS = [
-    ("В каком году был запущен телескоп Хаббл?", 1990),
-    ("В каком году была открыта первая экзопланета?", 1992),
-    ("В каком году был запущен марсоход Curiosity?", 2011),
-    ("В каком году была открыта тёмная материя?", 1933),
-    ("В каком году был запущен космический корабль Восток-1?", 1961),
-    ("В каком году была запущена станция Мир?", 1986),
-    ("В каком году был запущен МКС?", 1998),
-    ("В каком году была открыта чёрная дыра Лебедь X-1?", 1964),
-    ("В каком году была открыта космическая микроволновая фоновая радиация?", 1965),
-    ("В каком году был создан Плутон?", 1930),
+    ("In what year was the Hubble telescope launched?", 1990),
+    ("In what year was the first exoplanet discovered?", 1992),
+    ("In what year was the Curiosity rover launched?", 2011),
+    ("In what year was dark matter discovered?", 1933),
+    ("In what year was Vostok-1 launched?", 1961),
+    ("In what year was the Mir space station launched?", 1986),
+    ("In what year was the ISS launched?", 1998),
+    ("In what year was the black hole Cygnus X-1 discovered?", 1964),
+    ("In what year was cosmic microwave background radiation discovered?", 1965),
+    ("In what year was Pluto discovered?", 1930),
 ]
 
 ARMENIA_QUESTIONS = [
-    ("В каком году был основан первый армянский алфавит Месропом Маштоцем?", 405),
-    ("В каком году было Битва при Аварайре?", 451),
-    ("В каком году было создано Киликийское армянское царство?", 1080),
-    ("В каком году был основан Матенадаран?", 1921),
-    ("В каком году была создана первая армянская республика?", 1918),
-    ("В каком году было Спитакское землетрясение?", 1988),
-    ("В каком году Армения вступила в ООН?", 1992),
-    ("В каком году была принята Конституция Армении?", 1995),
-    ("В каком году был открыт коньячный завод в Ереване?", 1887),
-    ("В каком году был основан театр оперы и балета в Ереване?", 1933),
+    ("In what year was the Armenian alphabet created by Mesrop Mashtots?", 405),
+    ("In what year was the Battle of Avarayr?", 451),
+    ("In what year was the Armenian Kingdom of Cilicia founded?", 1080),
+    ("In what year was Matenadaran founded?", 1921),
+    ("In what year was the First Republic of Armenia established?", 1918),
+    ("In what year was the Spitak earthquake?", 1988),
+    ("In what year did Armenia join the UN?", 1992),
+    ("In what year was the Constitution of Armenia adopted?", 1995),
+    ("In what year was the Yerevan Brandy Company founded?", 1887),
+    ("In what year was the Yerevan Opera Theatre founded?", 1933),
 ]
 
 # Combine all questions
@@ -134,14 +134,11 @@ class CodeMasterHacking:
         
     def generate_new_puzzle(self):
         """Generate a new random puzzle based on historical questions"""
-        # Select 4 random questions from the knowledge base
         self.questions_asked = random.sample(ALL_QUESTIONS, 4)
         self.answers_received = []
         
-        # The target code is derived from the answers
         digits = []
         for question, answer in self.questions_asked:
-            # Take last digit of the answer year
             digits.append(answer % 10)
         
         self.target_code = digits
@@ -157,19 +154,18 @@ class CodeMasterHacking:
         
         self.attempts += 1
         
-        # Evaluate the guess
         result = []
         target_copy = self.target_code.copy()
         guess_copy = guess_digits.copy()
         
-        # First pass: check exact matches (green)
+        # First pass: check exact matches
         for i in range(4):
             if guess_copy[i] == target_copy[i]:
                 result.append(('✓', guess_copy[i], 'correct position'))
                 target_copy[i] = None
                 guess_copy[i] = None
         
-        # Second pass: check correct digits in wrong position (yellow)
+        # Second pass: check correct digits in wrong position
         for i in range(4):
             if guess_copy[i] is not None:
                 for j in range(4):
@@ -178,15 +174,13 @@ class CodeMasterHacking:
                         target_copy[j] = None
                         break
         
-        # Remaining digits are incorrect (red)
+        # Remaining digits are incorrect
         for i in range(4):
             if guess_copy[i] is not None:
                 result.append(('✗', guess_copy[i], 'not present'))
         
-        # Store guess
         self.previous_guesses.append((guess_digits, result))
         
-        # Check if solved
         is_correct = all(g == t for g, t in zip(guess_digits, self.target_code))
         
         return result, is_correct
@@ -194,45 +188,40 @@ class CodeMasterHacking:
     def get_hint(self):
         """Provide a logical hint based on previous attempts"""
         if len(self.previous_guesses) == 0:
-            return "Система ожидает первую попытку ввода..."
+            return "System waiting for first input..."
         
         hint = "\n"
         hint += f"{Fore.CYAN}┌─────────────────────────────────────────────────────────────┐{Fore.RESET}\n"
-        hint += f"{Fore.CYAN}│{Fore.YELLOW} АНАЛИЗ ПРЕДЫДУЩИХ ПОПЫТОК{Fore.CYAN}{' ' * 47}│{Fore.RESET}\n"
+        hint += f"{Fore.CYAN}│{Fore.YELLOW} PREVIOUS ATTEMPTS ANALYSIS{Fore.CYAN}{' ' * 45}│{Fore.RESET}\n"
         hint += f"{Fore.CYAN}├─────────────────────────────────────────────────────────────┤{Fore.RESET}\n"
         
         for idx, (guess, result) in enumerate(self.previous_guesses):
             guess_str = ''.join(str(d) for d in guess)
-            hint += f"{Fore.CYAN}│{Fore.WHITE} Попытка {idx + 1}: {guess_str}{Fore.CYAN}{' ' * (40 - len(guess_str))}│{Fore.RESET}\n"
+            hint += f"{Fore.CYAN}│{Fore.WHITE} Attempt {idx + 1}: {guess_str}{Fore.CYAN}{' ' * (40 - len(guess_str))}│{Fore.RESET}\n"
             
-            # Count correct digits
             correct_pos = sum(1 for r in result if r[0] == '✓')
             correct_wrong_pos = sum(1 for r in result if r[0] == '◉')
             incorrect = sum(1 for r in result if r[0] == '✗')
             
-            hint += f"{Fore.CYAN}│{Fore.GREEN}  ✓ Правильная позиция: {correct_pos}{Fore.CYAN}{' ' * 33}│{Fore.RESET}\n"
-            hint += f"{Fore.CYAN}│{Fore.YELLOW}  ◉ Есть, но не здесь: {correct_wrong_pos}{Fore.CYAN}{' ' * 30}│{Fore.RESET}\n"
-            hint += f"{Fore.CYAN}│{Fore.RED}  ✗ Отсутствуют: {incorrect}{Fore.CYAN}{' ' * 36}│{Fore.RESET}\n"
+            hint += f"{Fore.CYAN}│{Fore.GREEN}  ✓ Correct position: {correct_pos}{Fore.CYAN}{' ' * 37}│{Fore.RESET}\n"
+            hint += f"{Fore.CYAN}│{Fore.YELLOW}  ◉ Wrong position: {correct_wrong_pos}{Fore.CYAN}{' ' * 35}│{Fore.RESET}\n"
+            hint += f"{Fore.CYAN}│{Fore.RED}  ✗ Not present: {incorrect}{Fore.CYAN}{' ' * 38}│{Fore.RESET}\n"
         
         hint += f"{Fore.CYAN}└─────────────────────────────────────────────────────────────┘{Fore.RESET}"
         return hint
     
     def get_remaining_attempts(self):
-        """Get remaining attempts"""
         return self.max_attempts - self.attempts
     
     def is_failed(self):
-        """Check if player failed"""
         return self.attempts >= self.max_attempts
 
 # ==================== UTILITY FUNCTIONS ====================
 
 def clear_screen():
-    """Clear terminal screen"""
     os.system('clear' if os.name != 'nt' else 'cls')
 
 def type_effect(text, delay=TYPING_DELAY, color=Fore.GREEN):
-    """Print text with typewriter effect"""
     for char in text:
         sys.stdout.write(color + char)
         sys.stdout.flush()
@@ -240,23 +229,13 @@ def type_effect(text, delay=TYPING_DELAY, color=Fore.GREEN):
     print()
 
 def slow_print(text, delay=0.005, color=Fore.WHITE):
-    """Print text line by line with delay"""
     for char in text:
         sys.stdout.write(color + char)
         sys.stdout.flush()
         time.sleep(delay)
     print()
 
-def blink_cursor():
-    """Simulate blinking cursor"""
-    chars = ['|', '/', '-', '\\']
-    for i in range(4):
-        sys.stdout.write(f'\r{Fore.GREEN}{chars[i]}')
-        sys.stdout.flush()
-        time.sleep(0.2)
-
 def progress_bar(current, total, prefix='', suffix='', length=50):
-    """Display progress bar"""
     percent = 100 * (current / float(total))
     filled_length = int(length * current // total)
     bar = f"{Fore.CYAN}█{Fore.RESET}" * filled_length + f"{Fore.BLACK}░{Fore.RESET}" * (length - filled_length)
@@ -264,7 +243,6 @@ def progress_bar(current, total, prefix='', suffix='', length=50):
     sys.stdout.flush()
 
 def loading_animation(text, duration=1.5):
-    """Display loading animation"""
     frames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
     start_time = time.time()
     frame_idx = 0
@@ -276,21 +254,17 @@ def loading_animation(text, duration=1.5):
     sys.stdout.write(f"\r{Fore.GREEN}✓ {text}{' ' * 30}{Fore.RESET}\n")
 
 def generate_random_id():
-    """Generate random ID"""
     return f"0x{random.randint(10000000, 99999999):08X}"
 
 def generate_random_coords():
-    """Generate random coordinates"""
     lat = random.uniform(-90, 90)
     lon = random.uniform(-180, 180)
     return lat, lon
 
 def generate_random_ip():
-    """Generate random IP address"""
     return f"{random.randint(1,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(1,255)}"
 
 def print_hacking_header():
-    """Print hacking minigame header"""
     header = f"""
 {Fore.RED}{'═'*70}
 {Fore.RED}  ╔══════════════════════════════════════════════════════════════════╗
@@ -311,116 +285,107 @@ def hacking_minigame():
     questions = codemaster.generate_new_puzzle()
     
     type_effect("┌─────────────────────────────────────────────────────────────────────┐", 0.001, Fore.CYAN)
-    type_effect("│  СИСТЕМА КОДОВОГО ДОСТУПА АКТИВИРОВАНА                              │", 0.001, Fore.CYAN)
-    type_effect("│  Агент, для взлома необходимо ответить на 4 вопроса                 │", 0.001, Fore.CYAN)
-    type_effect("│  Каждый ответ формирует цифру кода доступа                          │", 0.001, Fore.CYAN)
+    type_effect("│              CODE ACCESS SYSTEM ACTIVATED                           │", 0.001, Fore.CYAN)
+    type_effect("│  Agent, you must answer 4 questions to hack the system             │", 0.001, Fore.CYAN)
+    type_effect("│  Each answer generates a digit of the access code                  │", 0.001, Fore.CYAN)
     type_effect("└─────────────────────────────────────────────────────────────────────┘", 0.001, Fore.CYAN)
     
     print()
     time.sleep(1)
     
-    # Phase 1: Knowledge questions
     collected_digits = []
     
     for idx, (question, answer) in enumerate(questions):
         print(f"\n{Fore.MAGENTA}{'─'*70}")
-        type_effect(f"ВОПРОС {idx + 1}/4", 0.02, Fore.RED)
+        type_effect(f"QUESTION {idx + 1}/4", 0.02, Fore.RED)
         print(f"{Fore.MAGENTA}{'─'*70}")
         
         type_effect(question, 0.02, Fore.YELLOW)
         print()
         
-        # Show hint about the answer
-        last_digit_hint = f"Подсказка: последняя цифра ответа будет использована в коде"
+        last_digit_hint = "Hint: The last digit of the answer will be used in the code"
         slow_print(f"[INFO] {last_digit_hint}", 0.005, Fore.CYAN)
         
         attempts = 2
         while attempts > 0:
             try:
-                user_answer = input(f"{Fore.GREEN}Ваш ответ ({attempts} попытка): {Fore.RESET}")
+                user_answer = input(f"{Fore.GREEN}Your answer ({attempts} attempts left): {Fore.RESET}")
                 user_year = int(user_answer)
                 
                 if user_year == answer:
                     digit = answer % 10
                     collected_digits.append(digit)
-                    print(f"{Fore.GREEN}✓ ВЕРНО! Цифра кода: {digit}{Fore.RESET}")
+                    print(f"{Fore.GREEN}✓ CORRECT! Code digit: {digit}{Fore.RESET}")
                     break
                 else:
                     attempts -= 1
                     if attempts > 0:
-                        # Provide hint based on closeness
                         diff = abs(user_year - answer)
                         if diff <= 10:
-                            print(f"{Fore.YELLOW}⚠ Очень близко! Разница {diff} лет{Fore.RESET}")
+                            print(f"{Fore.YELLOW}⚠ Very close! Difference: {diff} years{Fore.RESET}")
                         elif diff <= 50:
-                            print(f"{Fore.YELLOW}⚠ Близко, но не точно. Разница {diff} лет{Fore.RESET}")
+                            print(f"{Fore.YELLOW}⚠ Close but not exact. Difference: {diff} years{Fore.RESET}")
                         else:
-                            print(f"{Fore.RED}✗ НЕВЕРНО! Правильный ответ: {answer}{Fore.RESET}")
-                            print(f"{Fore.CYAN}💡 Историческая справка: {answer} год{Fore.RESET}")
+                            print(f"{Fore.RED}✗ INCORRECT! Correct answer: {answer}{Fore.RESET}")
+                            print(f"{Fore.CYAN}💡 Historical fact: The answer is {answer}{Fore.RESET}")
                     else:
-                        print(f"{Fore.RED}✗ ИСПОЛЬЗОВАНА ПОСЛЕДНЯЯ ПОПЫТКА!{Fore.RESET}")
+                        print(f"{Fore.RED}✗ LAST ATTEMPT USED!{Fore.RESET}")
                         digit = answer % 10
                         collected_digits.append(digit)
-                        print(f"{Fore.YELLOW}⚠ КОД СФОРМИРОВАН АВТОМАТИЧЕСКИ: {digit}{Fore.RESET}")
+                        print(f"{Fore.YELLOW}⚠ Code generated automatically: {digit}{Fore.RESET}")
                         
             except ValueError:
-                print(f"{Fore.RED}✗ Введите число!{Fore.RESET}")
+                print(f"{Fore.RED}✗ Please enter a number!{Fore.RESET}")
                 attempts -= 1
             except KeyboardInterrupt:
                 return False
         
         time.sleep(0.5)
     
-    # Phase 2: Code breaking
     print(f"\n{Fore.MAGENTA}{'='*70}")
     type_effect("┌─────────────────────────────────────────────────────────────────────┐", 0.001, Fore.CYAN)
-    type_effect("│  КОД СФОРМИРОВАН                                                  │", 0.001, Fore.CYAN)
-    type_effect("│  Теперь необходимо взломать финальный код доступа                  │", 0.001, Fore.CYAN)
-    type_effect("│  Используйте логику и предыдущие подсказки                         │", 0.001, Fore.CYAN)
+    type_effect("│                    CODE GENERATED                                   │", 0.001, Fore.CYAN)
+    type_effect("│          Now you must crack the final access code                  │", 0.001, Fore.CYAN)
+    type_effect("│          Use logic and previous hints                              │", 0.001, Fore.CYAN)
     type_effect("└─────────────────────────────────────────────────────────────────────┘", 0.001, Fore.CYAN)
     print(f"{Fore.MAGENTA}{'='*70}{Fore.RESET}")
     
     time.sleep(1)
     
-    # Show the digits collected
-    print(f"\n{Fore.CYAN}[DEBUG] Собранные цифры: {collected_digits}{Fore.RESET}")
-    print(f"{Fore.YELLOW}[INFO] Цифры могут быть переставлены в коде!{Fore.RESET}")
-    print(f"{Fore.RED}[WARNING] Вам нужно угадать ПРАВИЛЬНУЮ ПОСЛЕДОВАТЕЛЬНОСТЬ!{Fore.RESET}")
+    print(f"\n{Fore.CYAN}[DEBUG] Collected digits: {collected_digits}{Fore.RESET}")
+    print(f"{Fore.YELLOW}[INFO] Digits may be rearranged in the code!{Fore.RESET}")
+    print(f"{Fore.RED}[WARNING] You need to guess the CORRECT SEQUENCE!{Fore.RESET}")
     
     time.sleep(1)
     
-    # Phase 3: Guess the code
     print(f"\n{Fore.MAGENTA}{'─'*70}")
-    type_effect("НАЧАЛО ВЗЛОМА", 0.02, Fore.RED)
+    type_effect("HACK INITIATED", 0.02, Fore.RED)
     print(f"{Fore.MAGENTA}{'─'*70}")
     
-    print(f"\n{Fore.CYAN}Доступно попыток: {codemaster.max_attempts}{Fore.RESET}")
-    print(f"{Fore.YELLOW}Формат ввода: четыре цифры (например: 1234){Fore.RESET}")
+    print(f"\n{Fore.CYAN}Attempts available: {codemaster.max_attempts}{Fore.RESET}")
+    print(f"{Fore.YELLOW}Input format: four digits (e.g., 1234){Fore.RESET}")
     
-    # Provide initial target hint from collected digits
-    print(f"\n{Fore.CYAN}[СИСТЕМНАЯ ПОДСКАЗКА]{Fore.RESET}")
-    print(f"   В коде используются только эти цифры: {set(collected_digits)}")
-    print(f"   Каждая цифра используется ровно один раз")
+    print(f"\n{Fore.CYAN}[SYSTEM HINT]{Fore.RESET}")
+    print(f"   Only these digits are used in the code: {set(collected_digits)}")
+    print(f"   Each digit is used exactly once")
     
     while not codemaster.is_failed():
-        print(f"\n{Fore.GREEN}Попыток осталось: {codemaster.get_remaining_attempts()}{Fore.RESET}")
+        print(f"\n{Fore.GREEN}Attempts remaining: {codemaster.get_remaining_attempts()}{Fore.RESET}")
         
         try:
-            guess_input = input(f"{Fore.YELLOW}ВВЕДИТЕ КОД > {Fore.RESET}")
+            guess_input = input(f"{Fore.YELLOW}ENTER CODE > {Fore.RESET}")
             
             if len(guess_input) != 4 or not guess_input.isdigit():
-                print(f"{Fore.RED}✗ Неверный формат! Введите 4 цифры.{Fore.RESET}")
+                print(f"{Fore.RED}✗ Invalid format! Enter 4 digits.{Fore.RESET}")
                 continue
             
             guess = [int(d) for d in guess_input]
             result, is_correct = codemaster.check_guess(guess)
             
-            # Visual feedback
             print(f"\n{Fore.CYAN}┌─────────────────────────────────────────────────────────────┐{Fore.RESET}")
-            print(f"{Fore.CYAN}│{Fore.WHITE} РЕЗУЛЬТАТ АНАЛИЗА:                                  {Fore.CYAN}│{Fore.RESET}")
+            print(f"{Fore.CYAN}│{Fore.WHITE} ANALYSIS RESULT:                                       {Fore.CYAN}│{Fore.RESET}")
             print(f"{Fore.CYAN}├─────────────────────────────────────────────────────────────┤{Fore.RESET}")
             
-            # Show guess with colors
             guess_line = "│  "
             for r in result:
                 if r[0] == '✓':
@@ -432,48 +397,44 @@ def hacking_minigame():
             guess_line += f"{Fore.CYAN}{' ' * (40 - len(guess_input))}│{Fore.RESET}"
             print(guess_line)
             
-            # Show status
             correct_pos = sum(1 for r in result if r[0] == '✓')
             correct_wrong = sum(1 for r in result if r[0] == '◉')
             
-            print(f"{Fore.CYAN}│{Fore.GREEN}  ✓ Правильная позиция: {correct_pos}{Fore.CYAN}{' ' * 33}│{Fore.RESET}")
-            print(f"{Fore.CYAN}│{Fore.YELLOW}  ◉ Есть, но не здесь: {correct_wrong}{Fore.CYAN}{' ' * 30}│{Fore.RESET}")
+            print(f"{Fore.CYAN}│{Fore.GREEN}  ✓ Correct position: {correct_pos}{Fore.CYAN}{' ' * 37}│{Fore.RESET}")
+            print(f"{Fore.CYAN}│{Fore.YELLOW}  ◉ Wrong position: {correct_wrong}{Fore.CYAN}{' ' * 37}│{Fore.RESET}")
             print(f"{Fore.CYAN}└─────────────────────────────────────────────────────────────┘{Fore.RESET}")
             
             if is_correct:
                 print(f"\n{Fore.GREEN}{'█'*70}")
                 print(f"{Fore.GREEN}█{Fore.YELLOW}{' ' * 68}{Fore.GREEN}█")
-                print(f"{Fore.GREEN}█{Fore.YELLOW}  🎉 ДОСТУП РАЗРЕШЁН! КОД ВЕРНЫЙ! 🎉{Fore.GREEN}{' ' * 22}█")
+                print(f"{Fore.GREEN}█{Fore.YELLOW}  🎉 ACCESS GRANTED! CODE IS CORRECT! 🎉{Fore.GREEN}{' ' * 22}█")
                 print(f"{Fore.GREEN}█{Fore.YELLOW}{' ' * 68}{Fore.GREEN}█")
                 print(f"{Fore.GREEN}{'█'*70}{Fore.RESET}")
                 time.sleep(1.5)
                 return True
             else:
-                # Show hints
                 if codemaster.get_remaining_attempts() > 0:
-                    print(f"\n{Fore.CYAN}Хотите получить логическую подсказку? (y/n){Fore.RESET}")
+                    print(f"\n{Fore.CYAN}Would you like a logical hint? (y/n){Fore.RESET}")
                     hint_choice = input(f"{Fore.GREEN}> {Fore.RESET}")
                     if hint_choice.lower() == 'y':
                         print(codemaster.get_hint())
         
         except KeyboardInterrupt:
-            print(f"\n{Fore.RED}[!] Взлом прерван!{Fore.RESET}")
+            print(f"\n{Fore.RED}[!] Hack interrupted!{Fore.RESET}")
             return False
     
-    # Failed
     print(f"\n{Fore.RED}{'█'*70}")
     print(f"{Fore.RED}█{Fore.YELLOW}{' ' * 68}{Fore.RED}█")
-    print(f"{Fore.RED}█{Fore.YELLOW}  ❌ ДОСТУП ЗАБЛОКИРОВАН! ПОПЫТКИ ИСЧЕРПАНЫ! ❌{Fore.RED}{' ' * 15}█")
+    print(f"{Fore.RED}█{Fore.YELLOW}      ❌ ACCESS DENIED! ATTEMPTS EXHAUSTED! ❌{Fore.RED}{' ' * 23}█")
     print(f"{Fore.RED}█{Fore.YELLOW}{' ' * 68}{Fore.RED}█")
     print(f"{Fore.RED}{'█'*70}{Fore.RESET}")
-    print(f"\n{Fore.YELLOW}Правильный код был: {''.join(str(d) for d in codemaster.target_code)}{Fore.RESET}")
+    print(f"\n{Fore.YELLOW}The correct code was: {''.join(str(d) for d in codemaster.target_code)}{Fore.RESET}")
     time.sleep(2)
     return False
 
 # ==================== ASCII BANNERS ====================
 
 def print_main_banner():
-    """Print main ASCII banner"""
     banner = f"""
 {Fore.RED}{'█'*70}
 {Fore.RED}████████╗██╗ ██████╗ ██████╗ █████╗ ███╗   ██╗{Fore.RESET}
@@ -497,7 +458,6 @@ def print_main_banner():
     print(banner)
 
 def print_simulation_header():
-    """Print simulation header"""
     print(f"\n{Fore.MAGENTA}{'═'*70}")
     print(f"{Fore.MAGENTA}║{Fore.CYAN} SIMULATION CONTROL CENTER{Fore.MAGENTA}{' ' * 46}║")
     print(f"{Fore.MAGENTA}{'═'*70}{Fore.RESET}")
@@ -505,7 +465,6 @@ def print_simulation_header():
 # ==================== LOADING SEQUENCES ====================
 
 def loading_sequence():
-    """Initial loading sequence"""
     print(f"\n{Fore.CYAN}[>] INITIALIZING TIGRAN CYBER COMMAND X...{Fore.RESET}")
     time.sleep(0.5)
     
@@ -536,7 +495,6 @@ def loading_sequence():
 # ==================== SCANNING FUNCTIONS ====================
 
 def fake_wifi_scan():
-    """Simulate WiFi scanning"""
     print(f"\n{Fore.BLUE}[>] SCANNING: WiFi Networks{Fore.RESET}")
     loading_animation("Scanning 2.4GHz and 5GHz bands", 2.0)
     
@@ -555,7 +513,6 @@ def fake_wifi_scan():
     print(f"{Fore.GREEN}✓ Found {len(networks)} WiFi networks{Fore.RESET}")
 
 def fake_bluetooth_scan():
-    """Simulate Bluetooth scanning"""
     print(f"\n{Fore.BLUE}[>] SCANNING: Bluetooth Devices{Fore.RESET}")
     loading_animation("Probing Bluetooth Low Energy devices", 1.8)
     
@@ -574,7 +531,6 @@ def fake_bluetooth_scan():
     print(f"{Fore.GREEN}✓ Found {len(bt_devices)} Bluetooth devices{Fore.RESET}")
 
 def fake_cellular_scan():
-    """Simulate cellular network scanning"""
     print(f"\n{Fore.BLUE}[>] SCANNING: Cellular Networks{Fore.RESET}")
     loading_animation("Analyzing cellular frequencies", 2.2)
     
@@ -593,7 +549,6 @@ def fake_cellular_scan():
     print(f"{Fore.GREEN}✓ Cell tower triangulation complete{Fore.RESET}")
 
 def fake_gps_mapping():
-    """Simulate GPS mapping"""
     print(f"\n{Fore.BLUE}[>] SCANNING: GPS Coordinates{Fore.RESET}")
     loading_animation("Acquiring satellite lock", 2.5)
     
@@ -609,7 +564,6 @@ def fake_gps_mapping():
     print(f"{Fore.GREEN}✓ GPS position acquired{Fore.RESET}")
 
 def fake_rf_spectrum_analysis():
-    """Simulate RF spectrum analysis"""
     print(f"\n{Fore.BLUE}[>] SCANNING: RF Spectrum{Fore.RESET}")
     loading_animation("Analyzing radio frequency spectrum", 2.3)
     
@@ -628,7 +582,6 @@ def fake_rf_spectrum_analysis():
     print(f"{Fore.GREEN}✓ RF spectrum analysis complete{Fore.RESET}")
 
 def fake_drone_detection():
-    """Simulate drone detection"""
     print(f"\n{Fore.BLUE}[>] SCANNING: Drone Detection{Fore.RESET}")
     loading_animation("Monitoring for UAV activity", 2.0)
     
@@ -644,7 +597,6 @@ def fake_drone_detection():
     print(f"{Fore.YELLOW}⚠ {len(drones)} drones detected in area{Fore.RESET}")
 
 def fake_esp32_detection():
-    """Simulate ESP32 device detection"""
     print(f"\n{Fore.BLUE}[>] SCANNING: IoT Devices (ESP32){Fore.RESET}")
     loading_animation("Searching for ESP32 modules", 2.1)
     
@@ -661,7 +613,6 @@ def fake_esp32_detection():
     print(f"{Fore.YELLOW}⚠ {len(esp_devices)} ESP32 devices detected{Fore.RESET}")
 
 def fake_smart_device_mapping():
-    """Simulate smart device mapping"""
     print(f"\n{Fore.BLUE}[>] SCANNING: Smart Devices{Fore.RESET}")
     loading_animation("Mapping smart home devices", 2.0)
     
@@ -680,7 +631,6 @@ def fake_smart_device_mapping():
     print(f"{Fore.GREEN}✓ {len(devices)} smart devices mapped{Fore.RESET}")
 
 def fake_camera_detection():
-    """Simulate camera detection"""
     print(f"\n{Fore.BLUE}[>] SCANNING: Camera Devices{Fore.RESET}")
     loading_animation("Detecting optical sensors", 1.9)
     
@@ -696,7 +646,6 @@ def fake_camera_detection():
     print(f"{Fore.GREEN}✓ {len(cameras)} camera devices detected{Fore.RESET}")
 
 def fake_sensor_detection():
-    """Simulate sensor detection"""
     print(f"\n{Fore.BLUE}[>] SCANNING: Environmental Sensors{Fore.RESET}")
     loading_animation("Detecting IoT sensors", 2.0)
     
@@ -716,7 +665,6 @@ def fake_sensor_detection():
 # ==================== DETECTION RESULTS ====================
 
 def fake_detection_results():
-    """Display fake detection results"""
     print(f"\n{Fore.RED}{'='*70}")
     type_effect("[!] WARNING: SUSPICIOUS SIGNALS DETECTED", 0.02, Fore.RED)
     print(f"{Fore.RED}{'='*70}{Fore.RESET}")
@@ -739,58 +687,55 @@ def fake_detection_results():
 # ==================== SIMULATION GAME MODES ====================
 
 def select_location():
-    """Location selection menu"""
     print_simulation_header()
     print(f"""
-{Fore.CYAN}[1]{Fore.WHITE} Локальный объект (Local Building)
-{Fore.CYAN}[2]{Fore.WHITE} Квартира (Apartment)
-{Fore.CYAN}[3]{Fore.WHITE} Частный дом (Private House)
-{Fore.CYAN}[4]{Fore.WHITE} Улица (Street)
-{Fore.CYAN}[5]{Fore.WHITE} Район (District)
-{Fore.CYAN}[6]{Fore.WHITE} Город (City)
-{Fore.CYAN}[7]{Fore.WHITE} Спутниковая зона (Satellite Zone)
-{Fore.CYAN}[0]{Fore.WHITE} Выход (Exit)
+{Fore.CYAN}[1]{Fore.WHITE} Local Building
+{Fore.CYAN}[2]{Fore.WHITE} Apartment
+{Fore.CYAN}[3]{Fore.WHITE} Private House
+{Fore.CYAN}[4]{Fore.WHITE} Street
+{Fore.CYAN}[5]{Fore.WHITE} District
+{Fore.CYAN}[6]{Fore.WHITE} City
+{Fore.CYAN}[7]{Fore.WHITE} Satellite Zone
+{Fore.CYAN}[0]{Fore.WHITE} Exit
 {Fore.RESET}
 """)
     
     while True:
         try:
-            choice = input(f"{Fore.GREEN}Выберите локацию (1-7): {Fore.RESET}")
+            choice = input(f"{Fore.GREEN}Select location (1-7): {Fore.RESET}")
             if choice == '0':
                 return None
             if choice in ['1', '2', '3', '4', '5', '6', '7']:
                 return int(choice)
-            print(f"{Fore.RED}Неверный выбор!{Fore.RESET}")
+            print(f"{Fore.RED}Invalid choice!{Fore.RESET}")
         except KeyboardInterrupt:
             return None
 
 def select_difficulty():
-    """Difficulty selection menu"""
     print(f"""
 {Fore.MAGENTA}{'─'*70}
-{Fore.CYAN}ВЫБЕРИТЕ УРОВЕНЬ СИМУЛЯЦИИ
+{Fore.CYAN}SELECT SIMULATION DIFFICULTY
 {Fore.MAGENTA}{'─'*70}
-{Fore.GREEN}[1]{Fore.WHITE} Низкий (Low)
-{Fore.GREEN}[2]{Fore.WHITE} Средний (Medium)
-{Fore.GREEN}[3]{Fore.WHITE} Высокий (High)
-{Fore.GREEN}[4]{Fore.WHITE} Экстремальный (Extreme)
-{Fore.GREEN}[5]{Fore.WHITE} Невозможный (Impossible)
+{Fore.GREEN}[1]{Fore.WHITE} Low
+{Fore.GREEN}[2]{Fore.WHITE} Medium
+{Fore.GREEN}[3]{Fore.WHITE} High
+{Fore.GREEN}[4]{Fore.WHITE} Extreme
+{Fore.GREEN}[5]{Fore.WHITE} Impossible
 {Fore.RESET}
 """)
     
     while True:
         try:
-            choice = input(f"{Fore.GREEN}Выберите уровень (1-5): {Fore.RESET}")
+            choice = input(f"{Fore.GREEN}Select difficulty (1-5): {Fore.RESET}")
             if choice in ['1', '2', '3', '4', '5']:
                 return int(choice)
-            print(f"{Fore.RED}Неверный выбор!{Fore.RESET}")
+            print(f"{Fore.RED}Invalid choice!{Fore.RESET}")
         except KeyboardInterrupt:
             return None
 
 # ==================== SIMULATION PROCESSES ====================
 
 def run_simulation_processes(difficulty):
-    """Run simulated cyber processes"""
     processes = [
         "AI Calculation",
         "Signal Override Simulation",
@@ -810,7 +755,6 @@ def run_simulation_processes(difficulty):
         print(f"\n{Fore.CYAN}[>] {process}...{Fore.RESET}")
         loading_animation("Processing", random.uniform(0.8, 1.5))
         
-        # Show random tech messages
         messages = [
             f"[DEBUG] Processing ID: {generate_random_id()}",
             f"[INFO] Thread: {random.randint(1, 128)}",
@@ -826,7 +770,6 @@ def run_simulation_processes(difficulty):
 # ==================== FINAL REPORT ====================
 
 def print_final_report():
-    """Display final simulation report"""
     print(f"\n{Fore.GREEN}{'█'*70}")
     print(f"{Fore.GREEN}{'█'*10}{Fore.YELLOW} TIGRAN CYBER COMMAND X - SIMULATION COMPLETE {Fore.GREEN}{'█'*10}")
     print(f"{Fore.GREEN}{'█'*70}{Fore.RESET}")
@@ -848,44 +791,40 @@ def print_final_report():
     print(f"{Fore.GREEN}{'█'*70}{Fore.RESET}")
 
 def print_thank_you():
-    """Print thank you message"""
     print(f"\n{Fore.MAGENTA}{'─'*70}")
-    print(f"{Fore.CYAN}Спасибо за использование TIGRAN CYBER COMMAND X!")
-    print(f"{Fore.CYAN}Тренировочная симуляция завершена.")
+    print(f"{Fore.CYAN}Thank you for using TIGRAN CYBER COMMAND X!")
+    print(f"{Fore.CYAN}Training simulation completed.")
     print(f"{Fore.MAGENTA}{'─'*70}{Fore.RESET}")
-    print(f"\n{Fore.YELLOW}Дата: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}{Fore.RESET}")
-    print(f"{Fore.YELLOW}ID сессии: {generate_random_id()}{Fore.RESET}")
+    print(f"\n{Fore.YELLOW}Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}{Fore.RESET}")
+    print(f"{Fore.YELLOW}Session ID: {generate_random_id()}{Fore.RESET}")
 
 # ==================== MAIN MENU ====================
 
 def main():
-    """Main function"""
     try:
         clear_screen()
         print_main_banner()
         time.sleep(1.5)
         
-        # HACKING MINIGAME FIRST - MUST PASS TO CONTINUE
         print(f"\n{Fore.RED}{'='*70}")
-        type_effect("[!] ТРЕБУЕТСЯ АВТОРИЗАЦИЯ ДОСТУПА [!]", 0.02, Fore.RED)
+        type_effect("[!] ACCESS AUTHORIZATION REQUIRED [!]", 0.02, Fore.RED)
         print(f"{Fore.RED}{'='*70}{Fore.RESET}")
         time.sleep(1)
         
         hacking_success = hacking_minigame()
         
         if not hacking_success:
-            print(f"\n{Fore.RED}[!] АВТОРИЗАЦИЯ НЕ ПРОЙДЕНА! ДОСТУП ЗАПРЕЩЁН!{Fore.RESET}")
-            print(f"{Fore.YELLOW}Программа будет закрыта...{Fore.RESET}")
+            print(f"\n{Fore.RED}[!] AUTHORIZATION FAILED! ACCESS DENIED!{Fore.RESET}")
+            print(f"{Fore.YELLOW}Program will exit...{Fore.RESET}")
             time.sleep(3)
             return
         
-        print(f"\n{Fore.GREEN}✓ АВТОРИЗАЦИЯ ПРОЙДЕНА! ДОБРО ПОЖАЛОВАТЬ, ОПЕРАТОР!{Fore.RESET}")
+        print(f"\n{Fore.GREEN}✓ AUTHORIZATION GRANTED! WELCOME, OPERATOR!{Fore.RESET}")
         time.sleep(1.5)
         
         loading_sequence()
         time.sleep(0.5)
         
-        # Scanning phase
         print(f"\n{Fore.RED}{'='*70}")
         type_effect("[>] INITIATING SURVEILLANCE SCAN", 0.02, Fore.RED)
         print(f"{Fore.RED}{'='*70}{Fore.RESET}")
@@ -904,11 +843,10 @@ def main():
         fake_detection_results()
         time.sleep(1)
         
-        # Simulation game
         while True:
             location = select_location()
             if location is None:
-                print(f"{Fore.YELLOW}Выход из программы...{Fore.RESET}")
+                print(f"{Fore.YELLOW}Exiting program...{Fore.RESET}")
                 break
             
             difficulty = select_difficulty()
@@ -920,36 +858,34 @@ def main():
             print_simulation_header()
             
             locations = {
-                1: "Локальный объект",
-                2: "Квартира",
-                3: "Частный дом",
-                4: "Улица",
-                5: "Район",
-                6: "Город",
-                7: "Спутниковая зона"
+                1: "Local Building",
+                2: "Apartment",
+                3: "Private House",
+                4: "Street",
+                5: "District",
+                6: "City",
+                7: "Satellite Zone"
             }
             
-            difficulties = {1: "Низкий", 2: "Средний", 3: "Высокий", 4: "Экстремальный", 5: "Невозможный"}
+            difficulties = {1: "Low", 2: "Medium", 3: "High", 4: "Extreme", 5: "Impossible"}
             
-            print(f"\n{Fore.GREEN}Локация: {locations[location]}")
-            print(f"Уровень сложности: {difficulties[difficulty]}{Fore.RESET}")
+            print(f"\n{Fore.GREEN}Location: {locations[location]}")
+            print(f"Difficulty Level: {difficulties[difficulty]}{Fore.RESET}")
             print(f"{Fore.MAGENTA}{'─'*70}{Fore.RESET}")
             time.sleep(1)
             
-            # Progress bar for simulation
-            print(f"\n{Fore.CYAN}[>] ЗАГРУЗКА СИМУЛЯЦИИ...{Fore.RESET}")
+            print(f"\n{Fore.CYAN}[>] LOADING SIMULATION...{Fore.RESET}")
             for i in range(101):
-                progress_bar(i, 100, prefix='Загрузка:', suffix='Готово')
+                progress_bar(i, 100, prefix='Loading:', suffix='Complete')
                 time.sleep(0.02)
             print()
             
-            # Run simulation
             success = run_simulation_processes(difficulty)
             
             print_final_report()
             print_thank_you()
             
-            print(f"\n{Fore.CYAN}Нажмите Enter для продолжения или Ctrl+C для выхода...{Fore.RESET}")
+            print(f"\n{Fore.CYAN}Press Enter to continue or Ctrl+C to exit...{Fore.RESET}")
             try:
                 input()
             except KeyboardInterrupt:
@@ -959,9 +895,9 @@ def main():
             print_main_banner()
     
     except KeyboardInterrupt:
-        print(f"\n{Fore.RED}\n[!] Программа прервана пользователем.{Fore.RESET}")
+        print(f"\n{Fore.RED}\n[!] Program interrupted by user.{Fore.RESET}")
     finally:
-        print(f"\n{Fore.YELLOW}Завершение работы TIGRAN CYBER COMMAND X...{Fore.RESET}")
+        print(f"\n{Fore.YELLOW}Shutting down TIGRAN CYBER COMMAND X...{Fore.RESET}")
         time.sleep(1)
 
 if __name__ == "__main__":
